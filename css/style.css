@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Raleway:ital,wght@0,200;0,300;1,100&family=Roboto+Mono:ital,wght@0,200;1,100&display=swap');
+
+:root{
+  --hedvig : 'Hedvig Letters Serif', serif;
+  --real : 'Raleway', sans-serif;
+  --mono : 'Roboto Mono', monospace;
+}
+.hedvig{
+  font-family: var(--hedvig);
+}
+.real{
+  font-family: var(--real);
+}
+.mono{
+  font-family: var(--mono);
+}
+.header #fixed {
+  width: 33%;
+  height: 100vh;
+  background-image: url(/img/bgi4.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header #fixed img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+@media only screen and (max-width:768px){
+  .header #fixed {
+      width: 100%;
+      position: relative;
+  }
+}
